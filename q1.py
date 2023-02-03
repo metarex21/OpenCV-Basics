@@ -2,6 +2,7 @@
 
 # Importing necessary libraries
 import cv2
+import numpy as np
 
 # Reading the image
 img = cv2.imread('image1.png')
