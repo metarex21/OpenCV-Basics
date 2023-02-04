@@ -16,4 +16,4 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Writing the negated image
-cv2.imwrite('negated.png', negated_img)
+cv2.imwrite('./output images/negated.png', negated_img)

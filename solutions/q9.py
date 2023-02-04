@@ -23,7 +23,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Saving the red component as an image
-cv2.imwrite('red.png', r)
+cv2.imwrite('./output images/red.png', r)
 
 # Displaying the green component
 cv2.imshow('Green Component', g)
@@ -31,7 +31,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Saving the green component as an image
-cv2.imwrite('green.png', g)
+cv2.imwrite('./output images/green.png', g)
 
 # Displaying the blue component
 cv2.imshow('Blue Component', b)
@@ -39,4 +39,4 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Saving the blue component as an image
-cv2.imwrite('blue.png', b)
+cv2.imwrite('./output images/blue.png', b)

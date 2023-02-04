@@ -17,7 +17,7 @@ def dispXwrite(img,bits):
     cv2.imshow(str(bits)+'-bit Image', imgx) #displays the image
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-    cv2.imwrite('output_'+str(bits)+'bit.png', imgx) #writes the image with suitable name
+    cv2.imwrite('./output images/output_'+str(bits)+'bit.png', imgx) #writes the image with suitable name
 
 for bits in range(8,0,-1):
     dispXwrite(img,bits)

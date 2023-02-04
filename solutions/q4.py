@@ -17,4 +17,4 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Writing the modified image
-cv2.imwrite('output2.png', img)
+cv2.imwrite('./output images/output2.png', img)

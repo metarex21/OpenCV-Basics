@@ -22,5 +22,5 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Writing the binary image
-cv2.imwrite('output3.png', binary_img)
+cv2.imwrite('./output images/output3.png', binary_img)
 
