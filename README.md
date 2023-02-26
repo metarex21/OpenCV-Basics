@@ -1,5 +1,7 @@
 # OpenCV Basics
- Programming and executing basic openCV instructions
+ Programming and executing basic openCV instructions.
+ ## Limitations:
+ Image Resolution Max(**512x512**px)
  
  ## Directions:
  - You can find the **questions** [**here**](./Questions.pdf)
