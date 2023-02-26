@@ -24,7 +24,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Writing the mirrored image
-cv2.imwrite('./output images/q2/mirrored.png', img_mirror)
+cv2.imwrite('./output images/mirrored.png', img_mirror)
 
 # Displaying the flipped image
 cv2.imshow('Flipped Image', img_flip)

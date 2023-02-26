@@ -3,6 +3,12 @@
 # Importing necessary libraries
 import cv2
 import numpy as np
+import os
+import math
+
+# Creating a directory to save the output images
+if not os.path.exists('./output images/q6'):
+    os.makedirs('./output images/q6')
 
 # Reading the image
 img = cv2.imread('image1.png')
@@ -17,9 +23,7 @@ def dispXwrite(img,bits):
     cv2.imshow(str(bits)+'-bit Image', imgx) #displays the image
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-    cv2.imwrite('./output images/output_'+str(bits)+'bit.png', imgx) #writes the image with suitable name
+    cv2.imwrite('./output images/q6/output_'+str(bits)+'bit.png', imgx) #writes the image with suitable name
 
 for bits in range(8,0,-1):
     dispXwrite(img,bits)
-
-

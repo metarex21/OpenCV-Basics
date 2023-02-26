@@ -3,6 +3,13 @@
 # Importing necessary libraries
 import cv2
 import numpy as np
+import os
+import math
+
+# Creating a directory to save the output images
+if not os.path.exists('./output images/q4'):
+    os.makedirs('./output images/q4')
+
 
 # Reading the grayscale image
 img = cv2.imread('image1.png', cv2.IMREAD_GRAYSCALE)
@@ -17,4 +24,4 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Writing the modified image
-cv2.imwrite('./output images/output2.png', img)
+cv2.imwrite('./output images/q4/output.png', img)

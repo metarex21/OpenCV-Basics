@@ -3,6 +3,12 @@
 # Importing necessary libraries
 import cv2
 import numpy as np
+import os
+import math
+
+# Creating a directory to save the output images
+if not os.path.exists('./output images/q10/'):
+    os.makedirs('./output images/q10/')
 
 # Reading the RGB image
 img = cv2.imread('image1.png')
@@ -28,7 +34,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 # Writing the YIQ image
-cv2.imwrite('./output images/YIQ model.png', img_yiq)
+cv2.imwrite('./output images/q10/YIQ model.png', img_yiq)
 
 # Writing the Converted image
-cv2.imwrite('./output images/RGB converted.png', img_rgb)
+cv2.imwrite('./output images/q10/RGB converted.png', img_rgb)
